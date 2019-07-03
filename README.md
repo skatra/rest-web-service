@@ -1,20 +1,24 @@
 # Example Spring Boot REST Web Service
-Spring RESTful Web Service
 
-##Setup for Intellij
+Feel free to connect:<br>
+[stevekatra.com](https://www.stevekatra.com/) <br>
+[@stevekatra](https://twitter.com/stevekatra)
+
+
+## Setup for Intellij
 gradle cleanIdea idea
 
-##Build
+## Build
 ```
 gradle clean build
 ```
 
-##Run
+## Run
 ```
 gradle bootRun
 ```
 
-##Endpoints
+## Endpoints
 GET /meeting
 
 
