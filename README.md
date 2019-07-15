@@ -18,74 +18,7 @@ gradle clean build
 gradle bootRun
 ```
 
-## Endpoints
-GET /meeting
-
-
-```javascript
-Request:  GET /meeting
-Response HTTP Status Code: 200
-Response HTTP Body:
-[
-    {
-        "id": 1,
-        "name": "1:1 with Steve",
-        "purpose": "Talk about the work week"
-    }
-]
+## Swagger2 Documentation
 ```
-
-GET /meeting/{id}
-
-```javascript
-Request:  GET /meeting/1
-Response HTTP Status Code: 200
-Response HTTP Body:
-{
-    "id": 1,
-    "name": "1:1 with Steve",
-    "purpose": "Talk about the work week"
-}
-```
-
-
-POST /meeting
-```javascript
-Request:  GET /meeting
-Request HTTP Body:
-{
-    "name": "1:1 with Steve",
-    "purpose": "Talk about the work week"
-}
-Response HTTP Status Code: 200
-Response HTTP Body:
-{
-    "id": 1,
-    "name": "1:1 with Steve",
-    "purpose": "Talk about the work week"
-}
-```
-
-PUT /meeting/{id}
-```javascript
-Request:  PUT /meeting/1
-Request HTTP Body:
-{
-    "id": 1,
-    "name": "1:1 with Steve",
-    "purpose": "Talk about the work week and hack-a-thon"
-}
-
-Response HTTP Status Code: 200
-Response HTTP Body:
-{
-    "id": 1,
-    "name": "1:1 with Steve",
-    "purpose": "Talk about the work week and hack-a-thon"
-}
-```
-
-DELETE /meeting/{id}
-```javascript
-HTTP Status Code: 200
+http://localhost:8080/swagger-ui.html
 ```

@@ -1,13 +1,26 @@
-package com.stevekatra.driver;
+package com.stevekatra.meeting;
+
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 import java.util.Objects;
 
+@ApiModel(description = "Meeting domain object")
 public class Meeting {
+
+    @ApiModelProperty(notes = "Database auto generated id")
     private long id;
+    @ApiModelProperty(notes = "Name of the meeting")
     private String name;
+    @ApiModelProperty(notes = "Purpose of the meeting")
     private String purpose;
 
     public Meeting() {
+    }
+
+    public Meeting(String name, String purpose) {
+        this.name = name;
+        this.purpose = purpose;
     }
 
     public Meeting(long id, String name, String purpose) {

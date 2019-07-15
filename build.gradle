@@ -27,8 +27,19 @@ repositories {
 }
 
 dependencies {
-    compile 'org.springframework.boot:spring-boot-starter-web'
-    testCompile 'org.springframework.boot:spring-boot-starter-test'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web'
+
+    //Swagger2
+    compile('io.springfox:springfox-swagger2:2.9.2') {
+        exclude group: 'io.swagger', module: 'swagger-annotations'
+        exclude group: 'io.swagger', module: 'swagger-models'
+    }
+    compile group: 'io.swagger', name: 'swagger-annotations', version: '1.5.21'
+    compile group: 'io.swagger', name: 'swagger-models', version: '1.5.21'
+    compile group: 'io.springfox', name: 'springfox-bean-validators', version: '2.9.2'
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test'
 }
 
 
