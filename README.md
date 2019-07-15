@@ -6,7 +6,9 @@ Feel free to connect:<br>
 
 
 ## Setup for Intellij
+```
 gradle cleanIdea idea
+```
 
 ## Build
 ```
